@@ -12,6 +12,7 @@ const CategoriasProvider = ({children}) => {
             const url = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Ordinary_Drink'
             const {data} = await axios(url);
             setCategorias(data.drinks);
+            console.log(data);
         } catch (error) {
             console.log(error);
         }
